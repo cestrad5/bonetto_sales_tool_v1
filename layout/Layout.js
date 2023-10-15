@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Sidebar from "../components/Sidebar";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Modal from "react-modal";
 import ModalProducto from "../components/ModalProducto";
 import useBonetto from "../hooks/ useBonetto";
@@ -47,6 +49,9 @@ export default function Layout({ children, pagina }) {
           <ModalProducto />
         </Modal>
       )}
+
+      <ToastContainer />
+
     </>
   );
 }

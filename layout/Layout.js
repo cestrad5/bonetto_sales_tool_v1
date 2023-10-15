@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Sidebar from "../components/Sidebar";
 
-export default function Layout({ children }) {
+export default function Layout({ children, pagina }) {
   return (
     <>
       <Head>
-        <title>Café</title>
+        <title> {pagina} - Bonetto </title>
         <meta name="description" content="Quiosco - Cafeteria" />
       </Head>
 
